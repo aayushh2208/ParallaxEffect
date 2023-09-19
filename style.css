@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    /* font-family: myfontt;
+    src: url(Poppins-Italic.ttf); */
+    font-family: head;
+    src: url(Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family:myfontt;
+    src: url(Poppins-Italic.ttf);
+}
+
+ .wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+    perspective: 10px;
+    
+}
+ .container
+{
+    position: relative;
+    height: 100%;
+    display: flex; 
+     justify-content:center;
+    align-items: center; 
+    transform-style: preserve-3d;
+    z-index: -1;
+    
+}
+.back{
+    transform: translateZ(-40px) scale(6);
+}
+.front{
+    transform: translateZ(-20px) scale(3);
+}
+.front,.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+  object-fit: cover;
+} 
+h1{
+    position: absolute;
+    top: 3rem;
+    font-size: 6rem;
+    letter-spacing: 4px;
+    font-family:head;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.1) ;
+}
+#hd2{
+    font-size: 3rem;
+    font-family: head;
+    padding: 0 5rem;
+
+}
+.para{
+     font-size: 1 rem;
+     font-family: myfontt;
+     padding: 0 5rem;
+     margin: 2.5rem 0;
+}
+section{
+    
+    background-color: rgb(45, 45,45);
+    color: white;
+    padding: 5rem 0;
+
+}
+.bg{
+    position: relative;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bg1{
+    background-image: url(sport-1.jpg);
+
+}
+.bg2{
+   background-image: url(sport-2.jpg);
+}
+.bg3
+{
+  background-image: url(sport-3.jpg);
+}
+.centres{
+    position: absolute;
+    font-family: head;
+    background-color: white;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-90px) scale(1);
+    padding: 10px 20px;
+}
+#last{
+   position: relative;
+   left: 50%;
+   font-family: head;
+   display: inline;
+   background-image: linear-gradient(to right bottom,red,green);
+   padding: 20px;
+   color: blue;
+}
